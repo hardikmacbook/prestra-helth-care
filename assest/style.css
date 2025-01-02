@@ -1037,6 +1037,10 @@ display: flex;
     background-color: #364b73;
     color: #ffffff;
     padding: 10px 0;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .last-footer p {
@@ -1064,6 +1068,10 @@ display: flex;
     display: block;
     background-color: #364b73;
     padding: 10px 0;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .second-footer>.outer>.container{
