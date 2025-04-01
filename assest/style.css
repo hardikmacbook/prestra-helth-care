@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Jost','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     color: #333;
     font-style: normal;
     font-weight: 400;
@@ -14,7 +14,44 @@
 :root{
     --button-background-color: #364b73;
     --text-hover-color:#364b73;
+    --secondary-color:#12aea4;
+    --header-bg-color:#2d2d25;
 }
+
+::selection{
+    color: #fff;
+    background-color: var(--button-background-color);
+}
+
+
+#top-btn{
+    background-color: var(--secondary-color);
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s all;
+    text-transform: capitalize;
+
+    &:hover{
+        background-color: #148e86;
+    }
+}
+
+#game-btn{
+    background-color: red;
+    position: fixed;
+    bottom: 30px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 50%;
+}
+
 
 .container{
     display: block;
@@ -34,19 +71,16 @@ header>.frist-header-outer{
     padding: 10px 0;
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
 header>.frist-header-outer>.frist-header-inner{
     display: block;
-    
 }
 
 .frist-header-inner>.frist-header-content{
    display: flex;
    justify-content: space-between;
-   padding: 5px 0;
    align-items: center;
    
 }
@@ -214,7 +248,7 @@ nav {
 
 .header-main {
     width: 100%;
-    background-color: #364b73;
+    background-color: var(--header-bg-color);
     display: block;
     width: 100%;
     max-width: 1920px;
@@ -309,7 +343,7 @@ nav {
 .sub-menu>li:first-child>a>i{
     color: black;
     margin-left: 10px;
-    transition: .5s;
+    transition: 0.5s;
 }
 .sub-menu>li:first-child>a:hover>i{
     transform: rotate(135deg);
@@ -321,7 +355,7 @@ nav {
 .sub-menu>li:nth-child(5)>a>i{
     color: black;
     margin-left: 10px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sub-menu>li:nth-child(2)>a:hover>i,
@@ -329,7 +363,7 @@ nav {
 .sub-menu>li:nth-child(4)>a:hover>i,
 .sub-menu>li:nth-child(5)>a:hover>i
 {
-    transform: rotate(190deg);
+    transform: rotate(135deg);
 
 }
 
@@ -1113,23 +1147,20 @@ display: flex;
 }
 
 .each-col ul li a{
-    color: white;
-    text-transform: capitalize;
-    transition: 1s all;
-}
-
-.each-col ul li{
-    transition: transform 0.8s ease;
-
-    &:hover{
-        transform: translate3d(20px, 0px, 0px);
-    }
-
+    color: #ffffff;
+  font-weight: 500;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  padding-left: 0;
 }
 
 .each-col ul li:hover a{
     color: #12aea4;
-    transform: translate3d(20px, 0px, 20px);
+    padding-left: 10px;
 }
 
 .each-col .social-links a{
